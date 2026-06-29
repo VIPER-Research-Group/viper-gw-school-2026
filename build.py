@@ -10,7 +10,7 @@ consistent and is trivial to update. Run `python3 build.py` to regenerate every
 import html
 
 SITE = "VIPER 2026 Summer School"
-VERSION = "2"  # bump to cache-bust assets/css + assets/js after a change
+VERSION = "3"  # bump to cache-bust assets/css + assets/js after a change
 EMAIL = "stephen.r.taylor@vanderbilt.edu"
 DEMOS = "https://stevertaylor.github.io/viper-2026-summer-school-demos/"
 MATERIALS = "https://github.com/stevertaylor/gw-school-2026-materials"
