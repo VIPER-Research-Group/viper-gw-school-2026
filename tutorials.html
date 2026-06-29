@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Tutorials &amp; demos &middot; VIPER 2026 Summer School</title>
+<meta name="description" content="Hands-on tutorials and interactive demos for the 2026 VIPER summer school." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M2 12c2 0 2-6 4-6s2 12 4 12 2-12 4-12 2 6 4 6' fill='none' stroke='%235ec8e6' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/site.css" />
+</head>
+<body>
+<div class="cosmos"></div>
+<header class="nav"><div class="nav-inner"><a class="brand" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2 0 2-6 4-6s2 12 4 12 2-12 4-12 2 6 4 6"/></svg></span><span>VIPER &rsquo;26<small>PTA GW Summer School</small></span></a><button class="nav-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav class="nav-links"><a href="index.html">Home</a><a href="schedule.html">Schedule</a><a href="syllabus.html">Syllabus</a><a href="speakers.html">Speakers</a><a href="participants.html">Participants</a><a href="travel.html">Travel</a><span class="has-menu"><a href="installation.html" class="active">Software &darr;</a><span class="drop"><a href="installation.html">Installation</a><a href="tutorials.html">Tutorials &amp; demos</a></span></span><span class="has-menu"><a href="imp_papers.html">Resources &darr;</a><span class="drop"><a href="imp_papers.html">Key papers</a><a href="useful_links.html">Useful links</a></span></span></nav></div></header>
+<main>
+
+<section class="page-head"><div class="wrap">
+  <span class="eyebrow"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l5-6-5-6M8 6l-5 6 5 6"/></svg> Software</span>
+  <h1>Tutorials &amp; demos</h1>
+  <p class="lead">Hands-on notebooks for the afternoons, plus browser-based demos you can open right now.</p>
+</div></section>
+<section class="section tight"><div class="wrap">
+  <div class="grid cols-2">
+    <a class="card" href="https://github.com/stevertaylor/gw-school-2026-materials" style="text-decoration:none">
+      <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M16 18l5-6-5-6M8 6l-5 6 5 6"/></svg></div>
+      <h3>Course materials repository <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3>
+      <p>Slides and Jupyter tutorials, organized by week and day &mdash; timing a pulsar, GWB
+      searches (frequentist &amp; Bayesian), holodeck, continuous waves, and more. Clone it and
+      <code>git pull</code> for updates.</p>
+    </a>
+    <a class="card" href="https://stevertaylor.github.io/viper-2026-summer-school-demos/" style="text-decoration:none">
+      <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5 18 18M18 6l-2.5 2.5M8.5 15.5 6 18"/></svg></div>
+      <h3>Interactive browser demos <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></h3>
+      <p>Self-contained visual demos: GWs from compact binaries, pulse delays along the
+      geodesic, pulsar timing vs. a passing GW, the Hellings &amp; Downs curve, and SMBH-binary
+      light curves. No install needed.</p>
+    </a>
+  </div>
+
+  <div class="prose" style="margin-top:2.4rem">
+    <h2>What you&rsquo;ll work through</h2>
+    <ul>
+      <li><b>Timing a pulsar</b> with tempo2, PINT and JUG.</li>
+      <li><b>Practical statistics &amp; foundational MCMC</b> &mdash; from priors to posteriors.</li>
+      <li><b>Detecting a GW background</b> &mdash; both the optimal-statistic (frequentist) and
+        full Bayesian (enterprise) routes.</li>
+      <li><b>holodeck</b> &mdash; simulating the SMBHB population and its background.</li>
+      <li><b>PTArcade</b> &mdash; new-physics interpretations of a nanohertz background.</li>
+      <li><b>Continuous-wave</b> detection of individual binaries.</li>
+    </ul>
+    <p>Setup instructions are on the <a href="installation.html">installation</a> page. Come with
+    the <code>viper</code> environment already built.</p>
+  </div>
+</div></section>
+
+</main>
+<footer class="footer"><div class="wrap">
+  <div class="footer-grid">
+    <div>
+      <a class="brand" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2 0 2-6 4-6s2 12 4 12 2-12 4-12 2 6 4 6"/></svg></span>
+        <span>VIPER 2026<small>Summer School</small></span></a>
+      <p class="muted" style="margin-top:1rem;max-width:34ch">
+        The Vanderbilt Initiative in Probes of Extreme Relativity &mdash; training the next
+        generation of nanohertz gravitational-wave astronomers.</p>
+      <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3.5 6.5 12 13l8.5-6.5"/></svg><a href="mailto:stephen.r.taylor@vanderbilt.edu">stephen.r.taylor@vanderbilt.edu</a></div>
+      <div class="contact-line"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11.5 12 4l8 7.5"/><path d="M6 10v10h12V10"/></svg><span>Stevenson Center, Vanderbilt University, Nashville, TN 37212</span></div>
+    </div>
+    <div>
+      <h4>Program</h4>
+      <a href="schedule.html">Schedule</a>
+      <a href="syllabus.html">Syllabus</a>
+      <a href="speakers.html">Speakers</a>
+      <a href="participants.html">Participants</a>
+    </div>
+    <div>
+      <h4>Get started</h4>
+      <a href="installation.html">Software install</a>
+      <a href="tutorials.html">Tutorials &amp; demos</a>
+      <a href="imp_papers.html">Key papers</a>
+      <a href="https://as.vanderbilt.edu/viper/">VIPER group <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/></svg></a>
+    </div>
+  </div>
+  <div class="copyright">
+    <span>&copy; 2026 VIPER &mdash; PTA GW Astrophysics Summer School.</span>
+    <span>Vanderbilt University &middot; Nashville, TN</span>
+  </div>
+</div></footer>
+<script src="assets/js/site.js"></script>
+</body>
+</html>
