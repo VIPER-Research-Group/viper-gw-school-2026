@@ -10,6 +10,7 @@ consistent and is trivial to update. Run `python3 build.py` to regenerate every
 import html
 
 SITE = "VIPER 2026 Summer School"
+VERSION = "2"  # bump to cache-bust assets/css + assets/js after a change
 EMAIL = "stephen.r.taylor@vanderbilt.edu"
 DEMOS = "https://stevertaylor.github.io/viper-2026-summer-school-demos/"
 MATERIALS = "https://github.com/stevertaylor/gw-school-2026-materials"
@@ -153,7 +154,7 @@ def page(title, active, body, desc):
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css" />
+<link rel="stylesheet" href="assets/css/site.css?v={VERSION}" />
 </head>
 <body>
 <div class="cosmos"></div>
@@ -162,7 +163,7 @@ def page(title, active, body, desc):
 {body}
 </main>
 {footer()}
-<script src="assets/js/site.js"></script>
+<script src="assets/js/site.js?v={VERSION}"></script>
 </body>
 </html>
 '''
