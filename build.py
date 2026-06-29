@@ -15,6 +15,8 @@ DEMOS = "https://stevertaylor.github.io/viper-2026-summer-school-demos/"
 MATERIALS = "https://github.com/stevertaylor/gw-school-2026-materials"
 VIPER_URL = "https://as.vanderbilt.edu/viper/"
 DATES = "July 20 – 31, 2026"
+VENUE = '17th &amp; Horton Building (the &ldquo;Sony Building&rdquo;)'
+VENUE_ROOM = "Chapel auditorium"
 
 # --------------------------------------------------------------------------- #
 # Inline SVG icons (stroke, currentColor). Keeps the site free of icon fonts.  #
@@ -104,7 +106,7 @@ def footer():
         The Vanderbilt Initiative in Probes of Extreme Relativity &mdash; training the next
         generation of nanohertz gravitational-wave astronomers.</p>
       <div class="contact-line">{I["mail"]}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
-      <div class="contact-line">{I["home"]}<span>Stevenson Center, Vanderbilt University, Nashville, TN 37212</span></div>
+      <div class="contact-line">{I["home"]}<span>{VENUE_ROOM}, {VENUE},<br />Vanderbilt University, Nashville, TN</span></div>
     </div>
     <div>
       <h4>Program</h4>
@@ -302,7 +304,7 @@ INSTRUCTORS = [
     ("Andrea Mitridate", "AM", "New physics GW signals"),
     ("Jessie Runnoe", "JR", "Supermassive black-hole binaries (astrophysics)"),
     ("Kyle Schumacher", "KS", "Introduction to GWs (theory); New physics GW signals"),
-    ("L. Schult", "LS", "ORFs, anisotropy, polarization &amp; beyond-GR"),
+    ("Levi Schult", "LS", "ORFs, anisotropy, polarization &amp; beyond-GR"),
     ("Caitlin Witt", "CW", "Continuous GW signals"),
     ("David Wright", "DW", "PTArcade"),
 ]
@@ -331,7 +333,7 @@ INDEX = f'''
   <div class="hero-meta">
     <span class="item">{I["calendar"]} Two weeks &middot; Mon&ndash;Fri</span>
     <span class="item">{I["clock"]} 9:00 am &ndash; 4:00 pm daily</span>
-    <span class="item">{I["pin"]} Vanderbilt University</span>
+    <span class="item">{I["pin"]} {VENUE_ROOM}, 17th &amp; Horton Bldg</span>
   </div>
   <div class="btn-row">
     <a class="btn btn-primary" href="schedule.html">View the schedule {I["arrow"]}</a>
@@ -349,8 +351,8 @@ INDEX = f'''
       nanohertz GWs with pulsar timing arrays.</p></article>
     <article class="card"><div class="ico">{I["rocket"]}</div><h3>Logistics</h3>
       <p>Two weeks, {DATES}. Mornings are lectures; afternoons mix hands-on software
-      tutorials, hack time, and a software helpdesk. Held in person at Vanderbilt,
-      running 9:00&nbsp;am&ndash;4:00&nbsp;pm each weekday.</p></article>
+      tutorials, hack time, and a software helpdesk. Held in person in the {VENUE_ROOM}
+      of the {VENUE}, running 9:00&nbsp;am&ndash;4:00&nbsp;pm each weekday.</p></article>
     <article class="card"><div class="ico">{I["pin"]}</div><h3>Around Vanderbilt</h3>
       <p>Vanderbilt sits minutes from downtown Nashville and the airport. Midtown and
       Downtown &mdash; both walkable &mdash; host a huge range of food, music, and nightlife.</p></article>
@@ -401,8 +403,8 @@ SCHEDULE = f'''
 <section class="page-head"><div class="wrap">
   <span class="eyebrow">{I["calendar"]} {DATES}</span>
   <h1>Schedule</h1>
-  <p class="lead">Two weeks of lectures, hands-on tutorials, and hack time. Mornings open with
-  coffee and 10-minute lightning talks at 9:00.</p>
+  <p class="lead">Two weeks of lectures, hands-on tutorials, and hack time, in the {VENUE_ROOM}
+  of the {VENUE}. Mornings open with coffee and 10-minute lightning talks at 9:00.</p>
 </div></section>
 <section class="section tight"><div class="wrap">
   <div class="week-tabs" data-tab-group data-tab-scope="#sched">
@@ -518,6 +520,11 @@ TRAVEL = f'''
   <h2>When</h2>
   <p>The school runs {DATES} (two weeks, Monday&ndash;Friday). Plan to arrive the weekend before
   July&nbsp;20 and depart on or after Friday July&nbsp;31.</p>
+
+  <h2>Venue</h2>
+  <p>All sessions are held in the <b>{VENUE_ROOM}</b> of the <b>{VENUE}</b> on the Vanderbilt
+  campus. The 17th &amp; Horton Building &mdash; named for the streets it sits on &mdash; is the former
+  Sony/BMG building, and most people on campus still call it the &ldquo;Sony Building.&rdquo;</p>
 
   <h2>Airport</h2>
   <p>Nashville International Airport (BNA) is roughly a 15&ndash;20 minute drive from Vanderbilt.
