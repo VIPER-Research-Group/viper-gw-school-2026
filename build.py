@@ -17,6 +17,8 @@ VIPER_URL = "https://as.vanderbilt.edu/viper/"
 DATES = "July 20 – 31, 2026"
 VENUE = '17th &amp; Horton Building (the &ldquo;Sony Building&rdquo;)'
 VENUE_ROOM = "Chapel auditorium"
+VENUE_ADDR = "1400 18th Avenue South, Nashville, TN"
+VENUE_MAP = "https://www.google.com/maps/search/?api=1&query=1400+18th+Avenue+South+Nashville+TN"
 
 # --------------------------------------------------------------------------- #
 # Inline SVG icons (stroke, currentColor). Keeps the site free of icon fonts.  #
@@ -106,7 +108,7 @@ def footer():
         The Vanderbilt Initiative in Probes of Extreme Relativity &mdash; training the next
         generation of nanohertz gravitational-wave astronomers.</p>
       <div class="contact-line">{I["mail"]}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
-      <div class="contact-line">{I["home"]}<span>{VENUE_ROOM}, {VENUE},<br />Vanderbilt University, Nashville, TN</span></div>
+      <div class="contact-line">{I["home"]}<span>{VENUE_ROOM}, {VENUE},<br />{VENUE_ADDR}</span></div>
     </div>
     <div>
       <h4>Program</h4>
@@ -523,8 +525,9 @@ TRAVEL = f'''
 
   <h2>Venue</h2>
   <p>All sessions are held in the <b>{VENUE_ROOM}</b> of the <b>{VENUE}</b> on the Vanderbilt
-  campus. The 17th &amp; Horton Building &mdash; named for the streets it sits on &mdash; is the former
-  Sony/BMG building, and most people on campus still call it the &ldquo;Sony Building.&rdquo;</p>
+  campus. The 17th &amp; Horton Building is the former Sony/BMG building, and most people on
+  campus still call it the &ldquo;Sony Building.&rdquo;</p>
+  <p>Address: <b>{VENUE_ADDR}</b> &middot; <a href="{VENUE_MAP}">open in Google Maps {I["ext"]}</a></p>
 
   <h2>Airport</h2>
   <p>Nashville International Airport (BNA) is roughly a 15&ndash;20 minute drive from Vanderbilt.
