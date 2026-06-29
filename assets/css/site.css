@@ -204,6 +204,21 @@ p  { color: var(--ink-soft); }
 .hero-meta .item { display: flex; align-items: center; gap: .6rem; color: var(--ink-soft); font-size: .98rem; }
 .hero-meta .item svg { color: var(--cyan); flex: 0 0 auto; }
 
+/* ---- VIPER logo lockups ------------------------------------------------ */
+.viper-presents {
+  display: inline-flex; align-items: center; gap: .55rem;
+  padding: .4rem 1rem .4rem .55rem; margin-bottom: 1.5rem;
+  border: 1px solid var(--line); border-radius: 999px; background: var(--glass);
+  transition: border-color .18s ease, transform .18s ease;
+}
+.viper-presents:hover { border-color: rgba(212,175,55,.55); transform: translateY(-1px); }
+.viper-presents .lbl { font-size: .72rem; letter-spacing: .2em; text-transform: uppercase; color: var(--ink-dim); }
+.viper-presents img { height: 26px; width: auto; display: block; }
+
+.viper-footer { display: inline-block; margin: .2rem 0 1rem; }
+.viper-footer img { height: 40px; width: auto; display: block; opacity: .95; transition: opacity .18s ease; }
+.viper-footer:hover img { opacity: 1; }
+
 /* ---- glass cards / features ------------------------------------------- */
 .grid { display: grid; gap: 1.2rem; }
 .grid.cols-2 { grid-template-columns: repeat(2, 1fr); }

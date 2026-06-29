@@ -107,6 +107,8 @@ def footer():
       <p class="muted" style="margin-top:1rem;max-width:34ch">
         The Vanderbilt Initiative in Probes of Extreme Relativity &mdash; training the next
         generation of nanohertz gravitational-wave astronomers.</p>
+      <a class="viper-footer" href="{VIPER_URL}" target="_blank" rel="noopener" title="Visit the VIPER group at Vanderbilt">
+        <img src="images/viper-logo.png" alt="VIPER at Vanderbilt University" /></a>
       <div class="contact-line">{I["mail"]}<a href="mailto:{EMAIL}">{EMAIL}</a></div>
       <div class="contact-line">{I["home"]}<span>{VENUE_ROOM}, {VENUE},<br />{VENUE_ADDR}</span></div>
     </div>
@@ -327,6 +329,11 @@ def people_html(people):
 
 INDEX = f'''
 <section class="hero"><div class="wrap">
+  <a class="viper-presents" href="{VIPER_URL}" target="_blank" rel="noopener" title="Visit the VIPER group at Vanderbilt">
+    <span class="lbl">Presented by</span>
+    <img src="images/viper-logo.png" alt="VIPER &mdash; Vanderbilt Initiative in Probes of Extreme Relativity" />
+  </a>
+  <br />
   <span class="badge"><span class="dot"></span> {DATES} &middot; Vanderbilt University, Nashville TN</span>
   <h1>The <span class="gradient-text">nanohertz</span> gravitational-wave universe, in two weeks.</h1>
   <p class="lead">The 2026 VIPER Summer School on Pulsar Timing Array GW Astrophysics &mdash;
