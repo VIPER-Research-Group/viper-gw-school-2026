@@ -10,7 +10,7 @@ consistent and is trivial to update. Run `python3 build.py` to regenerate every
 import html
 
 SITE = "VIPER 2026 Summer School"
-VERSION = "3"  # bump to cache-bust assets/css + assets/js after a change
+VERSION = "4"  # bump to cache-bust assets/css + assets/js after a change
 EMAIL = "stephen.r.taylor@vanderbilt.edu"
 DEMOS = "https://stevertaylor.github.io/viper-2026-summer-school-demos/"
 MATERIALS = "https://github.com/stevertaylor/gw-school-2026-materials"
@@ -328,8 +328,51 @@ def people_html(people):
 # Page bodies                                                                  #
 # --------------------------------------------------------------------------- #
 
+# Faded, on-theme hero backdrop: gravitational-wave wavefronts radiating from an
+# inspiraling binary, threaded by a few pulsar sightlines. Purely decorative; it
+# fades into the right-hand negative space and is hidden on small screens.
+HERO_ART = '''<svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="ha-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#9b7bff" stop-opacity=".50"/>
+      <stop offset="45%"  stop-color="#5ec8e6" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#5ec8e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ha-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#5ec8e6"/>
+      <stop offset="55%"  stop-color="#9b7bff"/>
+      <stop offset="100%" stop-color="#38e1c0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="300" cy="300" r="150" fill="url(#ha-core)"/>
+  <g stroke="url(#ha-ring)" stroke-width="1" opacity=".30">
+    <line x1="300" y1="300" x2="585" y2="262"/>
+    <line x1="300" y1="300" x2="512" y2="487"/>
+    <line x1="300" y1="300" x2="487" y2="86"/>
+  </g>
+  <g fill="#eaf0ff" opacity=".85">
+    <circle cx="562" cy="265" r="3.2"/>
+    <circle cx="491" cy="468" r="3.2"/>
+    <circle cx="468" cy="107" r="3.2"/>
+  </g>
+  <g class="rings" stroke="url(#ha-ring)" fill="none">
+    <circle cx="300" cy="300" r="60"  stroke-width="1.7" opacity=".85"/>
+    <circle cx="300" cy="300" r="112" stroke-width="1.5" opacity=".62"/>
+    <circle cx="300" cy="300" r="164" stroke-width="1.4" opacity=".44"/>
+    <circle cx="300" cy="300" r="216" stroke-width="1.2" opacity=".30"/>
+    <circle cx="300" cy="300" r="268" stroke-width="1.1" opacity=".19"/>
+    <circle cx="300" cy="300" r="320" stroke-width="1"   opacity=".11"/>
+  </g>
+  <ellipse cx="300" cy="300" rx="50" ry="21" transform="rotate(-24 300 300)"
+           stroke="#9b7bff" stroke-width="1" stroke-dasharray="3 5" opacity=".55"/>
+  <circle cx="346" cy="280" r="8.5" fill="#5ec8e6"/>
+  <circle cx="254" cy="320" r="6.5" fill="#9b7bff"/>
+</svg>'''
+
 INDEX = f'''
-<section class="hero"><div class="wrap">
+<section class="hero">
+  <div class="hero-art">{HERO_ART}</div>
+  <div class="wrap">
   <a class="viper-presents" href="{VIPER_URL}" target="_blank" rel="noopener" title="Visit the VIPER group at Vanderbilt">
     <span class="lbl">Presented by</span>
     <img src="images/viper-logo.png" alt="VIPER &mdash; Vanderbilt Initiative in Probes of Extreme Relativity" />
@@ -342,7 +385,7 @@ INDEX = f'''
   nanohertz gravitational-wave sky.</p>
   <div class="hero-meta">
     <span class="item">{I["calendar"]} Two weeks &middot; Mon&ndash;Fri</span>
-    <span class="item">{I["clock"]} 9:00 am &ndash; 4:00 pm daily</span>
+    <span class="item">{I["clock"]} 9:00 am &ndash; 5:00 pm daily</span>
     <span class="item">{I["pin"]} {VENUE_ROOM}, 17th &amp; Horton Bldg</span>
   </div>
   <div class="btn-row">
@@ -362,7 +405,7 @@ INDEX = f'''
     <article class="card"><div class="ico">{I["rocket"]}</div><h3>Logistics</h3>
       <p>Two weeks, {DATES}. Mornings are lectures; afternoons mix hands-on software
       tutorials, hack time, and a software helpdesk. Held in person in the {VENUE_ROOM}
-      of the {VENUE}, running 9:00&nbsp;am&ndash;4:00&nbsp;pm each weekday.</p></article>
+      of the {VENUE}, running 9:00&nbsp;am&ndash;5:00&nbsp;pm each weekday.</p></article>
     <article class="card"><div class="ico">{I["pin"]}</div><h3>Around Vanderbilt</h3>
       <p>Vanderbilt sits minutes from downtown Nashville and the airport. Midtown and
       Downtown &mdash; both walkable &mdash; host a huge range of food, music, and nightlife.</p></article>

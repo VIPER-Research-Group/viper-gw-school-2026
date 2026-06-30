@@ -9,14 +9,52 @@
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
-<link rel="stylesheet" href="assets/css/site.css?v=3" />
+<link rel="stylesheet" href="assets/css/site.css?v=4" />
 </head>
 <body>
 <div class="cosmos"></div>
 <header class="nav"><div class="nav-inner"><a class="brand" href="index.html"><span class="mark"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12c2 0 2-6 4-6s2 12 4 12 2-12 4-12 2 6 4 6"/></svg></span><span>VIPER &rsquo;26<small>PTA GW Summer School</small></span></a><button class="nav-toggle" aria-label="Menu"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button><nav class="nav-links"><a href="index.html" class="active">Home</a><a href="schedule.html">Schedule</a><a href="syllabus.html">Syllabus</a><a href="speakers.html">Speakers</a><a href="participants.html">Participants</a><a href="travel.html">Travel</a><span class="has-menu"><a href="installation.html">Software &darr;</a><span class="drop"><a href="installation.html">Installation</a><a href="tutorials.html">Tutorials &amp; demos</a></span></span><span class="has-menu"><a href="imp_papers.html">Resources &darr;</a><span class="drop"><a href="imp_papers.html">Key papers</a><a href="useful_links.html">Useful links</a></span></span></nav></div></header>
 <main>
 
-<section class="hero"><div class="wrap">
+<section class="hero">
+  <div class="hero-art"><svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <defs>
+    <radialGradient id="ha-core" cx="50%" cy="50%" r="50%">
+      <stop offset="0%"   stop-color="#9b7bff" stop-opacity=".50"/>
+      <stop offset="45%"  stop-color="#5ec8e6" stop-opacity=".16"/>
+      <stop offset="100%" stop-color="#5ec8e6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="ha-ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%"   stop-color="#5ec8e6"/>
+      <stop offset="55%"  stop-color="#9b7bff"/>
+      <stop offset="100%" stop-color="#38e1c0"/>
+    </linearGradient>
+  </defs>
+  <circle cx="300" cy="300" r="150" fill="url(#ha-core)"/>
+  <g stroke="url(#ha-ring)" stroke-width="1" opacity=".30">
+    <line x1="300" y1="300" x2="585" y2="262"/>
+    <line x1="300" y1="300" x2="512" y2="487"/>
+    <line x1="300" y1="300" x2="487" y2="86"/>
+  </g>
+  <g fill="#eaf0ff" opacity=".85">
+    <circle cx="562" cy="265" r="3.2"/>
+    <circle cx="491" cy="468" r="3.2"/>
+    <circle cx="468" cy="107" r="3.2"/>
+  </g>
+  <g class="rings" stroke="url(#ha-ring)" fill="none">
+    <circle cx="300" cy="300" r="60"  stroke-width="1.7" opacity=".85"/>
+    <circle cx="300" cy="300" r="112" stroke-width="1.5" opacity=".62"/>
+    <circle cx="300" cy="300" r="164" stroke-width="1.4" opacity=".44"/>
+    <circle cx="300" cy="300" r="216" stroke-width="1.2" opacity=".30"/>
+    <circle cx="300" cy="300" r="268" stroke-width="1.1" opacity=".19"/>
+    <circle cx="300" cy="300" r="320" stroke-width="1"   opacity=".11"/>
+  </g>
+  <ellipse cx="300" cy="300" rx="50" ry="21" transform="rotate(-24 300 300)"
+           stroke="#9b7bff" stroke-width="1" stroke-dasharray="3 5" opacity=".55"/>
+  <circle cx="346" cy="280" r="8.5" fill="#5ec8e6"/>
+  <circle cx="254" cy="320" r="6.5" fill="#9b7bff"/>
+</svg></div>
+  <div class="wrap">
   <a class="viper-presents" href="https://as.vanderbilt.edu/viper/" target="_blank" rel="noopener" title="Visit the VIPER group at Vanderbilt">
     <span class="lbl">Presented by</span>
     <img src="images/viper-logo.png" alt="VIPER &mdash; Vanderbilt Initiative in Probes of Extreme Relativity" />
@@ -29,7 +67,7 @@
   nanohertz gravitational-wave sky.</p>
   <div class="hero-meta">
     <span class="item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9h18M8 2.5v4M16 2.5v4"/></svg> Two weeks &middot; Mon&ndash;Fri</span>
-    <span class="item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 9:00 am &ndash; 4:00 pm daily</span>
+    <span class="item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg> 9:00 am &ndash; 5:00 pm daily</span>
     <span class="item"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg> Chapel auditorium, 17th &amp; Horton Bldg</span>
   </div>
   <div class="btn-row">
@@ -49,7 +87,7 @@
     <article class="card"><div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 13c-2 1-3 5-3 5s4-1 5-3M12 3c3.5 1.5 6 4 7.5 7.5L14 16l-5-5z"/><circle cx="14.5" cy="8.5" r="1.6"/></svg></div><h3>Logistics</h3>
       <p>Two weeks, July 20 – 31, 2026. Mornings are lectures; afternoons mix hands-on software
       tutorials, hack time, and a software helpdesk. Held in person in the Chapel auditorium
-      of the 17th &amp; Horton Building (the &ldquo;Sony Building&rdquo;), running 9:00&nbsp;am&ndash;4:00&nbsp;pm each weekday.</p></article>
+      of the 17th &amp; Horton Building (the &ldquo;Sony Building&rdquo;), running 9:00&nbsp;am&ndash;5:00&nbsp;pm each weekday.</p></article>
     <article class="card"><div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z"/><circle cx="12" cy="10" r="2.5"/></svg></div><h3>Around Vanderbilt</h3>
       <p>Vanderbilt sits minutes from downtown Nashville and the airport. Midtown and
       Downtown &mdash; both walkable &mdash; host a huge range of food, music, and nightlife.</p></article>
@@ -129,6 +167,6 @@
     <span>Vanderbilt University &middot; Nashville, TN</span>
   </div>
 </div></footer>
-<script src="assets/js/site.js?v=3"></script>
+<script src="assets/js/site.js?v=4"></script>
 </body>
 </html>
