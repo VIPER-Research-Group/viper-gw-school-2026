@@ -10,7 +10,7 @@ consistent and is trivial to update. Run `python3 build.py` to regenerate every
 import html
 
 SITE = "VIPER 2026 Summer School"
-VERSION = "4"  # bump to cache-bust assets/css + assets/js after a change
+VERSION = "5"  # bump to cache-bust assets/css + assets/js after a change
 EMAIL = "stephen.r.taylor@vanderbilt.edu"
 DEMOS = "https://stevertaylor.github.io/viper-2026-summer-school-demos/"
 MATERIALS = "https://github.com/stevertaylor/gw-school-2026-materials"
@@ -292,37 +292,36 @@ def legend():
 
 
 # --------------------------------------------------------------------------- #
-# Instructors. The program grid gives initial + surname only, so every full     #
-# first name below is an expansion and must be confirmed against the speaker's  #
-# own preferred form before this page is publicized. Affiliations are           #
-# intentionally omitted rather than guessed.                                    #
-# Organizer first, then alphabetical by surname.                                #
+# Instructors: organizer first, then alphabetical by surname. Names and         #
+# affiliations were reviewed and confirmed by the organizer (July 2026).        #
+# Fields: (display name, avatar initials, topics taught, affiliation).          #
 # --------------------------------------------------------------------------- #
 INSTRUCTORS = [
-    ("Stephen Taylor", "ST", "Organizer &middot; Stochastic GW backgrounds; Pulsar timing response to GWs"),
-    ("Maria Charisi", "MC", "Electromagnetic signatures of SMBH binaries"),
-    ("Alexander Criswell", "AC", "Introduction to statistics; GWs across the spectrum"),
-    ("Thankful Cromartie", "TC", "Pulsars &amp; pulsar timing"),
-    ("Kyle Gersbach", "KG", "Practical statistics &amp; MCMC; Detecting a GWB (frequentist)"),
-    ("Kayhan G&uuml;ltekin", "KG", "Holodeck"),
-    ("Nima Laal", "NL", "PTA likelihood; Detecting a GWB (Bayesian); Population inference"),
-    ("Bjorn Larsen", "BL", "Noise modeling"),
-    ("Tyson Littenberg", "TL", "Advanced sampling methods"),
-    ("Matthew Miles", "MM", "Timing a pulsar; Continuous GW signals; CW detection"),
-    ("Andrea Mitridate", "AM", "New physics GW signals"),
-    ("Jessie Runnoe", "JR", "Supermassive black-hole binaries (astrophysics)"),
-    ("Levi Schult", "LS", "ORFs, anisotropy, polarization &amp; beyond-GR"),
-    ("Kristen Schumacher", "KS", "Introduction to GWs (theory); New physics GW signals"),
-    ("Caitlin Witt", "CW", "Continuous GW signals"),
-    ("David Wright", "DW", "PTArcade"),
+    ("Stephen Taylor", "ST", "Organizer &middot; Stochastic GW backgrounds; Pulsar timing response to GWs", "Vanderbilt University"),
+    ("Maria Charisi", "MC", "Electromagnetic signatures of SMBH binaries", "Washington State University &amp; Institute of Astrophysics, FORTH (Crete)"),
+    ("Alexander Criswell", "AC", "Introduction to statistics; GWs across the spectrum", "Vanderbilt University &amp; Fisk University"),
+    ("Thankful Cromartie", "TC", "Pulsars &amp; pulsar timing", "Vanderbilt University"),
+    ("Kyle Gersbach", "KG", "Practical statistics &amp; MCMC; Detecting a GWB (frequentist)", "Vanderbilt University"),
+    ("Kayhan G&uuml;ltekin", "KG", "Holodeck", "University of Michigan"),
+    ("Nima Laal", "NL", "PTA likelihood; Detecting a GWB (Bayesian); Population inference", "Vanderbilt University"),
+    ("Bjorn Larsen", "BL", "Noise modeling", "Yale University"),
+    ("Tyson Littenberg", "TL", "Advanced sampling methods", "NASA Marshall Space Flight Center"),
+    ("Matthew Miles", "MM", "Timing a pulsar; Continuous GW signals; CW detection", "Vanderbilt University"),
+    ("Andrea Mitridate", "AM", "New physics GW signals", "Imperial College London"),
+    ("Jessie Runnoe", "JR", "Supermassive black-hole binaries (astrophysics)", "Vanderbilt University"),
+    ("Levi Schult", "LS", "ORFs, anisotropy, polarization &amp; beyond-GR", "Vanderbilt University"),
+    ("Kristen Schumacher", "KS", "Introduction to GWs (theory); New physics GW signals", "Caltech &amp; UT Austin"),
+    ("Caitlin Witt", "CW", "Continuous GW signals", "Wake Forest University"),
+    ("David Wright", "DW", "PTArcade", "Oregon State University"),
 ]
 
 
 def people_html(people):
     out = ['<div class="people">']
-    for name, ini, topic in people:
+    for name, ini, topic, affil in people:
         out.append(f'<div class="person"><span class="av">{ini}</span>'
-                   f'<div><div class="nm">{name}</div><div class="tp">{topic}</div></div></div>')
+                   f'<div><div class="nm">{name}</div><div class="tp">{topic}</div>'
+                   f'<div class="af">{I["pin"]}<span>{affil}</span></div></div></div>')
     out.append('</div>')
     return ''.join(out)
 
@@ -541,8 +540,8 @@ SPEAKERS = f'''
 </div></section>
 <section class="section tight"><div class="wrap">
   {people_html(INSTRUCTORS)}
-  <p class="note" style="margin-top:1.6rem">Drawn from the finalized program. Affiliations and
-  full bios will be added as they are confirmed.</p>
+  <p class="note" style="margin-top:1.6rem">Drawn from the finalized program; affiliations
+  confirmed by the organizers. Full bios to follow.</p>
 </div></section>
 '''
 

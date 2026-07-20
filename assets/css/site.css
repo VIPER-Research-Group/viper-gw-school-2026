@@ -350,6 +350,8 @@ table.sched td.empty { background: transparent; }
 }
 .person .nm { font-weight: 600; color: var(--ink); }
 .person .tp { font-size: .85rem; color: var(--ink-dim); margin-top: .15rem; }
+.person .af { display: inline-flex; align-items: center; gap: .4rem; font-size: .8rem; color: var(--ink-soft); margin-top: .4rem; }
+.person .af svg { width: 14px; height: 14px; color: var(--cyan); opacity: .8; flex: 0 0 auto; }
 
 /* link list */
 .linklist { display: grid; gap: .7rem; }
