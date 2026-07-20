@@ -349,6 +349,10 @@ table.sched td.empty { background: transparent; }
   background: linear-gradient(135deg, var(--cyan), var(--violet)); font-size: .92rem;
 }
 .person .nm { font-weight: 600; color: var(--ink); }
+.person .nm a { color: var(--ink); display: inline-flex; align-items: center; gap: .34rem; }
+.person .nm a:hover { color: var(--cyan); }
+.person .nm a svg { width: 13px; height: 13px; opacity: .45; flex: 0 0 auto; transition: opacity .18s ease; }
+.person .nm a:hover svg { opacity: 1; }
 .person .tp { font-size: .85rem; color: var(--ink-dim); margin-top: .15rem; }
 .person .af { display: inline-flex; align-items: center; gap: .4rem; font-size: .8rem; color: var(--ink-soft); margin-top: .4rem; }
 .person .af svg { width: 14px; height: 14px; color: var(--cyan); opacity: .8; flex: 0 0 auto; }
