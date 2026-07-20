@@ -211,7 +211,7 @@ WEEK1 = [
     ]},
     PAUSE2,
     {"t": "15:30", "cells": [
-        ("social", "Introductions, networking &amp; EMIT DEI exercises", ""),
+        ("social", "Introductions, networking &amp; EMIT exercises", ""),
         ("hack", "Hack time", ""),
         ("hack", "Hack time", ""),
         ("hack", "Hack time", ""),
