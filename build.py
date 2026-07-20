@@ -292,14 +292,17 @@ def legend():
 
 
 # --------------------------------------------------------------------------- #
-# Instructors (drawn from the program; affiliations intentionally omitted to   #
-# avoid guessing — fill them in as confirmations arrive).                      #
+# Instructors. The program grid gives initial + surname only, so every full     #
+# first name below is an expansion and must be confirmed against the speaker's  #
+# own preferred form before this page is publicized. Affiliations are           #
+# intentionally omitted rather than guessed.                                    #
+# Organizer first, then alphabetical by surname.                                #
 # --------------------------------------------------------------------------- #
 INSTRUCTORS = [
     ("Stephen Taylor", "ST", "Organizer &middot; Stochastic GW backgrounds; Pulsar timing response to GWs"),
     ("Maria Charisi", "MC", "Electromagnetic signatures of SMBH binaries"),
+    ("Alexander Criswell", "AC", "Introduction to statistics; GWs across the spectrum"),
     ("Thankful Cromartie", "TC", "Pulsars &amp; pulsar timing"),
-    ("Andrew Criswell", "AC", "Introduction to statistics; GWs across the spectrum"),
     ("Kyle Gersbach", "KG", "Practical statistics &amp; MCMC; Detecting a GWB (frequentist)"),
     ("Kayhan G&uuml;ltekin", "KG", "Holodeck"),
     ("Nima Laal", "NL", "PTA likelihood; Detecting a GWB (Bayesian); Population inference"),
@@ -308,8 +311,8 @@ INSTRUCTORS = [
     ("Matthew Miles", "MM", "Timing a pulsar; Continuous GW signals; CW detection"),
     ("Andrea Mitridate", "AM", "New physics GW signals"),
     ("Jessie Runnoe", "JR", "Supermassive black-hole binaries (astrophysics)"),
-    ("Kyle Schumacher", "KS", "Introduction to GWs (theory); New physics GW signals"),
     ("Levi Schult", "LS", "ORFs, anisotropy, polarization &amp; beyond-GR"),
+    ("Kristen Schumacher", "KS", "Introduction to GWs (theory); New physics GW signals"),
     ("Caitlin Witt", "CW", "Continuous GW signals"),
     ("David Wright", "DW", "PTArcade"),
 ]
