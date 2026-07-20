@@ -305,7 +305,7 @@ INSTRUCTORS = [
     ("Thankful Cromartie", "TC", "Pulsars &amp; pulsar timing", "Vanderbilt University", "https://tcromartie.github.io/"),
     ("Kyle Gersbach", "KG", "Practical statistics &amp; MCMC; Detecting a GWB (frequentist)", "Vanderbilt University", "https://github.com/GersbachKa"),
     ("Kayhan G&uuml;ltekin", "KG", "Holodeck", "University of Michigan", "https://lsa.umich.edu/astro/people/core-faculty/kayhan.html"),
-    ("Nima Laal", "NL", "PTA likelihood; Detecting a GWB (Bayesian); Population inference", "Vanderbilt University", ""),
+    ("Nima Laal", "NL", "PTA likelihood; Detecting a GWB (Bayesian); Population inference", "Vanderbilt University", "https://scholar.google.com/citations?user=iXK_XbUAAAAJ&amp;hl=en"),
     ("Bjorn Larsen", "BL", "Noise modeling", "Yale University", "https://physics.yale.edu/people/bjorn-larsen"),
     ("Tyson Littenberg", "TL", "Advanced sampling methods", "NASA Marshall Space Flight Center", "https://github.com/tlittenberg"),
     ("Matthew Miles", "MM", "Timing a pulsar; Continuous GW signals; CW detection", "Vanderbilt University", "https://scholar.google.com/citations?user=9YRwljUAAAAJ&amp;hl=en"),
