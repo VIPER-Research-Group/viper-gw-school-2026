@@ -196,7 +196,7 @@ WEEK1 = [
     PAUSE1,
     {"t": "11:15", "cells": [
         ("lecture", "Introduction to GWs (detectors across the spectrum)", "A. Criswell"),
-        ("hands", "Timing a pulsar (tempo2, PINT, JUG)", "M. Miles"),
+        ("lecture", "Pulsar timing response to GWs", "S. Taylor"),
         ("lecture", "SMBHBs (astro theory)", "J. Runnoe"),
         ("hands", "Practical statistics &amp; foundational MCMC", "K. Gersbach"),
         ("hands", "Detecting a GWB (frequentist)", "K. Gersbach"),
@@ -204,9 +204,9 @@ WEEK1 = [
     LUNCH,
     {"t": "14:00", "cells": [
         ("hands", "Software Helpdesk", ""),
-        ("lecture", "Pulsar timing response to GWs", "S. Taylor"),
-        ("hands", "Holodeck", "K. G&uuml;ltekin"),
         ("hack", "Hack time", ""),
+        ("hands", "Holodeck", "K. G&uuml;ltekin"),
+        ("hands", "Timing a pulsar (tempo2, PINT, JUG)", "M. Miles"),
         ("hands", "Detecting a GWB (Bayesian)", "N. Laal"),
     ]},
     PAUSE2,
